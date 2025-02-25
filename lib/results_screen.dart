@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
+import 'package:quiz_app/questions_summary.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({super.key, required this.chosenAnswers});
@@ -40,15 +41,7 @@ class ResultsScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            const Text(
-              textAlign: TextAlign.center,
-              "List of answers and questions will be displayed here.",
-              style: TextStyle(
-                fontSize: 15,
-                color: Colors.black,
-                fontWeight: FontWeight.w300,
-              ),
-            ),
+            QuestionsSummary(getSummaryData()),
             const SizedBox(height: 20),
             ElevatedButton(onPressed: () {}, child: const Text("Restart Quiz")),
           ],
