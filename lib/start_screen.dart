@@ -32,7 +32,7 @@ class StartScreen extends StatelessWidget {
               backgroundColor: const Color.fromARGB(255, 255, 255, 255),
               textStyle: TextStyle(fontSize: 20),
               side: const BorderSide(
-                color: Color.fromARGB(255, 51, 51, 51),
+                color: Color.fromARGB(0, 255, 255, 255),
                 width: 1,
               ),
             ),
